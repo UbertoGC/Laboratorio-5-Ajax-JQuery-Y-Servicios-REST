@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+HOLA MUNDO
+<script src="C:\Users\Chuber\Documents\jararchivos\jquery-3.6.0.js"></script>
+<script>
+$(document).ready(function(){
+  $("#button12").click(function(){
+    $.ajax({url: "http://localhost:8080/hola", success: function(result){
+      $("#div1").html(result);
+    }});
+  });
+});
+</script>
+</head>
+<body>
+<!--http://localhost:8080/hola-->
+<div id="div1">Este texto sera cambiado</div>
+
+<button id="button12">Get External Content</button>
+
+</body>
+</html>
